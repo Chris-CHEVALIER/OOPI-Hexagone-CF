@@ -13,9 +13,14 @@ int main()
     string welcome = "Bienvenue " + firstName + " " + lastName + " !";
     cout << welcome << endl; */
 
-    Pokemon carapuce;
-    carapuce.setNumber(3);
-    cout << carapuce.getNumber() << endl;
-    carapuce.attack();
+    Pokemon carapuce(3, "Carapuce", "Eau", "Eau", 100);
+    Pokemon mewtwo(150, "Mewtwo", "Psy", "Psy", 200);
+    /*  carapuce.setNumber(3);
+     mewtwo.setNumber(150);
+     carapuce.setName("Carapuce");
+     mewtwo.setName("Mewtwo"); */
+    carapuce.display();
+    mewtwo.display();
+    mewtwo.attack(carapuce);
     return 0;
 }
